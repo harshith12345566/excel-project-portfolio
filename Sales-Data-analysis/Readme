@@ -1,147 +1,144 @@
-
 # 🏊 Crystal Pools Sales Analysis System
 
 This project is a beginner-to-intermediate Excel sales analysis and commission tracking system created using Microsoft Excel.
 
-The spreadsheet simulates a real-world business sales environment where pool-related products are sold across different locations, and employee commissions and profits are calculated automatically using Excel formulas and business logic.
+The project simulates a real-world business sales environment where pool-related products are sold across different locations, and employee commissions and profits are calculated automatically using Excel formulas and spreadsheet logic.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Project Overview
+# 📌 Project Overview
 
-The project analyzes sales transactions for a company called “Crystal Pools” and includes:
+The dataset contains transaction-level sales data for a company called “Crystal Pools”.
 
-• Product sales tracking
-• Profit calculation
-• Employee commission analysis
-• Sales location tracking
-• Product-wise transaction records
-• Pivot table summaries
-• Business reporting and analytics
+The spreadsheet tracks:
 
-The spreadsheet contains transaction-level sales data along with a summary analysis sheet using Pivot Tables.
+• Product sales
+• Product pricing
+• Profit calculations
+• Employee commissions
+• Salesperson performance
+• Sales locations
+• Business revenue analysis
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Dataset Includes
-
-• Month
-• Transaction Number
-• Product Code
-• Product Description
-• Store Cost
-• Sale Price
-• Profit
-• Employee Commission
-• Salesperson First Name
-• Salesperson Last Name
-• Sales Location
+The project also includes Pivot Table summaries to analyze employee sales performance and overall business revenue.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Features
+# ✨ Features
 
 • Automated profit calculations
 • Conditional commission calculations
 • Product sales tracking
 • Employee sales analysis
 • Sales location analysis
-• Pivot table summary reporting
-• Structured business dataset
+• Pivot Table reporting
+• Business-style sales dataset
 • Spreadsheet automation using formulas
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Excel Concepts Practiced
+# 🧠 Excel Concepts Practiced
 
 • IF Formula
-• Profit Calculation
+• Profit Calculations
 • Relative Referencing
-• Conditional Logic
+• Absolute Referencing
 • Pivot Tables
-• Data Analysis
+• Sales Analytics
 • Spreadsheet Formatting
 • Business Reporting
-• Sales Analytics
+• Data Analysis
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Relative vs Absolute Referencing
+# 🔗 Relative vs Absolute Referencing
 
-Relative Referencing
+## Relative Referencing
 
 Relative references automatically change when formulas are copied across rows.
 
 Example:
 
+```excel id="x8m2qa"
 =Sale_Price - Store_Cost
+```
 
-This was used to calculate profits for multiple sales transactions automatically.
+This was used to calculate profits automatically for multiple product sales.
 
-Absolute Referencing
+---
+
+## Absolute Referencing
 
 Absolute references keep specific cells fixed during formula copying.
 
 Example:
 
+```excel id="v4n7pk"
 =$F$2 - E2
+```
 
-The `$` symbol prevents Excel from changing the referenced cell while copying formulas.
+The `$` symbol prevents Excel from changing the referenced cell while formulas are copied.
+
+This helped maintain fixed values during calculations.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Formulas Used
+# 📊 Formulas Used
 
-Profit Formula
+## Profit Formula
 
+```excel id="u3m8qa"
 =Sale_Price - Store_Cost
+```
 
-Used to calculate profit earned on each product sale.
+Used to calculate profit earned from each product sale.
 
-Commission Formula
+---
 
+## Commission Formula
+
+```excel id="k9v2mx"
 =IF(Sale_Price > 50, 0.2 * Profit, 0.1 * Profit)
+```
 
-Used to calculate:
-• 20% commission for products above Rs 50
-• 10% commission for products below Rs 50
+Used to calculate employee commission based on product sale price.
 
-IF Formula
+• 20% commission for higher-value sales
+• 10% commission for lower-value sales
 
+---
+
+## IF Formula
+
+```excel id="w7m1qd"
 =IF(Sale_Price > 50, High_Commission, Low_Commission)
+```
 
 Used for commission decision-making logic.
 
-SUM Formula
+---
 
-=SUM(Sale_Price_Range)
+## SUM Formula
 
-Used to calculate total sales revenue.
+```excel id="n5x4pk"
+=SUM(Sales_Range)
+```
 
-Pivot Table Aggregation
+Used to calculate total revenue generated.
+
+---
+
+## Pivot Table Aggregation
 
 Used to summarize:
+
 • Total sales by employee
 • Overall business revenue
+• Salesperson performance comparison
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Pivot Table Analysis
-
-The project includes a Pivot Table summary sheet that analyzes:
-
-• Total sales by employee
-• Overall revenue generated
-• Employee performance comparison
-
-Example Insights:
-• Barns generated high total sales
-• Smith had one of the largest overall revenues
-• Total sales exceeded Rs 17,000
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Excel Shortcuts Used
+# ⌨️ Excel Shortcuts Used
 
 Ctrl + C → Copy
 Ctrl + V → Paste
@@ -151,54 +148,62 @@ Ctrl + D → Fill Down
 Ctrl + R → Fill Right
 Alt + = → AutoSum
 F2 → Edit Selected Cell
-Ctrl + Arrow Keys → Fast Navigation
 Ctrl + Shift + L → Apply Filters
 Ctrl + T → Convert Range to Table
+Ctrl + Arrow Keys → Fast Navigation
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Analytics Included
+# 📈 Analytics Included
 
 • Product profit analysis
 • Employee commission analysis
 • Salesperson performance tracking
 • Sales location comparison
-• Total revenue analysis
-• Pivot table business summary
+• Revenue analysis
+• Pivot Table business summaries
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-What I Learned
+# 🎯 What I Learned
 
 Through this project, I learned:
 
-• How to structure business sales datasets
-• How profit calculations work in Excel
+• How business sales datasets are structured
+• How profit and commission systems work
 • How IF formulas automate business logic
-• How commission systems are implemented
 • How Pivot Tables summarize large datasets
-• How to analyze business sales performance
-• How Excel can be used for business reporting and analytics
+• How to analyze employee sales performance
+• How Excel can be used for business reporting and sales analytics
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Future Improvements
+# 🚀 Future Improvements
 
 • Interactive dashboard
 • Sales trend visualization
 • Product-wise performance charts
-• Advanced Pivot Table analysis
 • Dynamic filtering system
+• Advanced Pivot Table analysis
 • Monthly revenue dashboards
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Tools Used
+# 🛠️ Tools Used
 
 • Microsoft Excel
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Learning Journey
+# 📷 Project Screenshots
+
+• Sales Dataset Overview
+• Pivot Table Summary
+• Profit & Commission Analysis
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 📚 Learning Journey
 
 This project is part of my Excel and Data Analytics learning journey where I’m practicing:
 
@@ -209,16 +214,16 @@ This project is part of my Excel and Data Analytics learning journey where I’m
 • Spreadsheet Design
 • Sales Analytics
 
-through hands-on projects and practical implementation.
+through practical hands-on projects and real-world business simulations.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-About This Project
+# 🌟 About This Project
 
 This project focuses on learning practical business-oriented spreadsheet development using Excel by simulating a real-world sales and commission tracking system.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Feedback
+# 🙌 Feedback
 
 Suggestions, improvements, and feedback are always welcome!
